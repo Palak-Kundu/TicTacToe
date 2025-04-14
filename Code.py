@@ -55,3 +55,8 @@ def printBoard():
         (choices[2] == choices[4] and choices[4] == choices[6])):
             winner = True
             printBoard()
+
+    if winner:
+        print('Player ' + str(int(firstPlayer + 1)) + ' wins!')
+    else:
+        print('Game drawn')
