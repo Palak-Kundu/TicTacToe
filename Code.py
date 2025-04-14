@@ -41,3 +41,17 @@ def printBoard():
             choices[playerInput] = 'O'
 
         firstPlayer = not firstPlayer
+
+        for index in range(0, 3):
+            if (choices[index * 3] == choices[((index * 3) + 1)] and choices[index * 3] == choices[((index * 3) + 2)]):
+                winner = True
+                printBoard()
+
+            if(choices[index] == choices[index + 3] and choices[index + 3] == choices[index + 6]):
+                winner = True
+                printBoard()
+
+        if((choices[0] == choices[4] and choices[4] == choices[8]) or
+        (choices[2] == choices[4] and choices[4] == choices[6])):
+            winner = True
+            printBoard()
