@@ -14,3 +14,19 @@ def printBoard():
     print('=============')
     print('| ' + choices[6] + ' | ' + choices[7] + ' | ' + choices[8] + ' |')
     print('=============\n')
+
+    while not winner and iterations < 9:
+        printBoard()
+
+        iterations += 1
+
+        if firstPlayer == True:
+            print('Player 1: ', end = '')
+        else:
+            print('Player 2: ', end = '')
+
+        try:
+            playerInput = int(input())
+        except:
+            print('Please enter a valid number from the board')
+            continue
