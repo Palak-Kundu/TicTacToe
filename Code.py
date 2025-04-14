@@ -30,3 +30,14 @@ def printBoard():
         except:
             print('Please enter a valid number from the board')
             continue
+
+        if choices[playerInput] == 'X' or choices[playerInput] == 'O':
+            print('Illegal move, try again!')
+            continue
+
+        if firstPlayer:
+            choices[playerInput] = 'X'
+        else:
+            choices[playerInput] = 'O'
+
+        firstPlayer = not firstPlayer
