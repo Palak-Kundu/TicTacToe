@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Tic-Tac-Toe (Console Version)
 
 This is a simple **two-player console-based Tic-Tac-Toe game** written in Python. It allows two players to play alternately on the same machine using the terminal.
@@ -41,7 +40,4 @@ python tic_tac_toe.py
 =============  
 ```
 =======
-# TicTacToe
-Tic Tac Toe Game in Python
-Simple Tic Tac Toe game in Python to enjoy during funtime 
->>>>>>> 88822e8eed5de811bda59d672e832659f8a9051a
+
